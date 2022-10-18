@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     fetch("https://opendata.resas-portal.go.jp/api/v1/prefectures", {
-      headers: { "X-API-KEY": process.env.REACT_APP_API_KEY },
+      headers: { "X-API-KEY": "Np0uxkIKSB4js27mgrB5xUzDVMP7yVsz3ZRc0LrB" },
     })
       .then((res) => {
         return res.json();
@@ -24,7 +24,7 @@ function App() {
     fetch(
       `https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?prefCode=0`,
       {
-        headers: { "X-API-KEY": process.env.REACT_APP_API_KEY },
+        headers: { "X-API-KEY": "Np0uxkIKSB4js27mgrB5xUzDVMP7yVsz3ZRc0LrB" },
       }
     )
       .then((res) => {
@@ -96,7 +96,7 @@ function App() {
           prefectureNumber + 1
         }`,
         {
-          headers: { "X-API-KEY": process.env.REACT_APP_API_KEY },
+          headers: { "X-API-KEY": "Np0uxkIKSB4js27mgrB5xUzDVMP7yVsz3ZRc0LrB" },
         }
       )
         .then((res) => {
